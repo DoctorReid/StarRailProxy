@@ -151,7 +151,8 @@ class MoveDirectly(SrOperation):
                 self.ctx,
                 max_consumable_cnt=self.ctx.world_patrol_config.max_consumable_cnt,
                 need_check_point=True,  # 检查秘技点是否足够 可以在没有或者不能用药的情况加快判断
-                trick_snack=self.ctx.game_config.use_quirky_snacks
+                trick_snack=self.ctx.game_config.use_quirky_snacks,
+                exit_after_use=True
             )
             op.execute()
             return self.round_wait('飞霄使用秘技')
