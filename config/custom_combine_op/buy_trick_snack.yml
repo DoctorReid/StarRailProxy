@@ -3,6 +3,34 @@ ops:
   - op: 'back_to_world_plus'
     data: []
   - op: 'transport'
+    data: ['雅利洛-VI', '行政区', '1', '中央广场']
+  - op: 'wait'
+    data: ['in_world', '20']
+  - op: 'move'
+    data: [ '638', '900' ]
+  - op: 'interact'
+    data: ['world_single_line', '罗纳德']
+  - op: 'interact'
+    data: ['talk', '我要购物']
+  - op: 'wait'
+    data: ['seconds', '1']
+  - op: 'click'
+    data: [ '960', '980' ]
+  - op: 'wait'
+    data: ['seconds', '1']
+  - op: 'click'
+    data: [ '960', '980' ]
+  - op: 'wait'
+    data: ['seconds', '1']
+  - op: 'buy_store_item'
+    data: ['gaseous_liquid', '0']
+    allow_fail: true
+  - op: 'buy_store_item'
+    data: ['seed', '0']
+    allow_fail: true
+  - op: 'back_to_world_plus'
+    data: []
+  - op: 'transport'
     data: ['仙舟「罗浮」', '星槎海中枢', '0', '宣夜大道']
   - op: 'wait'
     data: ['in_world', '20']
